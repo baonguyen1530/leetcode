@@ -4,7 +4,7 @@ class Solution:
         visit = set()
         q = deque()
 
-        def addRoom(r,c):
+        def addRoom(r,c): 
             if (r < 0 or r == ROW or c < 0 or c == COL or (r,c) in visit or grid[r][c] == -1):
                 return
             visit.add((r,c))
